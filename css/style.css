@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
+.explore-work:hover{
+    color: red;
+}
+
 a {
     text-decoration: none;
     color: var(--color-body);
@@ -133,8 +137,8 @@ img{
 
 .btn-brand:hover,
 .btn-brand:focus{
-    background-color: var(--color-brand2);
-    color: var(--color-base);
+    background-color: var(--color-base);
+    color: var(--color-brand);
     border-color: var(--color-brand2);
 }
 
@@ -208,3 +212,14 @@ box-shadow: none;
     border-radius: 100px;
     font-size: 24px;
 }
+
+/* Changinng text in the main heading */
+
+#words {
+    transition: opacity 0.5s ease; /* Define transition property for opacity change */
+  }
+  
+  .fadeOut {
+    opacity: 0; /* Set opacity to 0 for fade-out effect */
+  }
+  

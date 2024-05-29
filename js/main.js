@@ -15,3 +15,25 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+function changeTitleText() {
+  const words = [
+    "Solutions Architect",
+    "Web Developer",
+    "UI/UX Designer"
+  ];
+  let i = 0;
+  const wordsElement = document.getElementById("words");
+
+  setInterval(() => {
+    wordsElement.classList.add("fadeOut");
+    setTimeout(() => {
+      wordsElement.textContent = words[i];
+      wordsElement.classList.remove("fadeOut");
+      i = (i + 1) % words.length; // Increment i and reset to 0 when it reaches the end of the array
+    }, 500); // Duration of fadeOut animation, in milliseconds
+  }, 3000); // Interval between title changes, in milliseconds
+}
+
+// Call the function
+changeTitleText();
